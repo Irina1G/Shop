@@ -532,7 +532,6 @@ body {
 
 .fas:hover {
     filter: opacity(50%);
-
 }
 
 .pink_effect:hover {
@@ -1588,7 +1587,7 @@ a {
 
 }
 
-.form-check-input:checked {
+.forms-check-input:checked {
     width: 14px;
     height: 14px;
     border: 2px solid #555555;
@@ -1596,7 +1595,7 @@ a {
 
 }
 
-.form-check-label {
+.forms-check-label {
     color: #222222;
     font-family: "Lato";
     font-size: 12px;
@@ -1674,12 +1673,12 @@ a {
     border: 1px solid transparent;
 }
 
-.rigth-form {
+.rigth-forms {
     padding-left: 349px;
     width: 246px;
 }
 
-.rigth-form h3 {
+.rigth-forms h3 {
     color: #222222;
     font-family: "Lato";
     font-size: 13px;
@@ -2166,4 +2165,430 @@ a {
     background-color: #ffffff;
     color: #f16d7f;
     border: 1px solid transparent;
+}
+
+.product-menu {
+    display: flex;
+    margin-top: 59px;
+    max-width: 1610px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    margin-left: 230px;
+    position: relative;
+}
+
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide+label~div {
+    display: none;
+
+
+}
+
+/* вид текста label */
+.hide+label,
+.hide:checked+label {
+    color: #6f6e6e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 4px solid #ef5b70;
+    height: 37px;
+    padding-left: 11px;
+    padding-top: 12px;
+}
+
+/* вид текста label при активном переключателе */
+.hide:checked+label {
+    color: #ef5b70;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+
+
+}
+
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked+label+div {
+    display: block;
+    background: #ffffff;
+    width: 243px;
+    color: #6f6e6e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 33px;
+    text-align: left;
+    position: absolute;
+    margin-top: 37px;
+    border-bottom: 1px solid transparent;
+    z-index: 10000;
+    padding-left: 17px;
+}
+
+.menu-list-product:hover {
+    color: #ef5b70
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend {
+    display: flex;
+    flex-wrap: wrap;
+    width: 176px;
+    height: 80px;
+    padding-top: 14px;
+    margin-left: 50px;
+}
+
+.trend li {
+    color: #6f6e6e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    display: inline;
+}
+
+.trending {
+    color: #6f6e6e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.size-button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 207px;
+    height: 74px;
+    padding-top: 15px;
+}
+
+.form-check {
+    display: inline;
+
+}
+
+.form-check-input {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding-right: 9px;
+}
+
+.form-check-label {
+    color: #6f6e6e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 9px;
+
+}
+
+.fas:checked {
+    transform: rotate(-45deg);
+    color: #ef5b70
+}
+
+
+.range {
+    margin-left: 50px;
+    width: 262px;
+    height: 73px;
+    padding-top: 15px;
+}
+
+.form-range {
+    width: 262px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    color: #f16d7f;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #f16d7f;
+    border: 1px solid #bdc3c7;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.range p {
+    color: #6f6e6e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+}
+
+.range-p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+
+    height: 30px;
+    background-color: #ffffff;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+
+.view-conteiner {
+    margin: 0 auto;
+}
+
+.filter {
+    width: 846px;
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    margin-left: 522px;
+    flex-direction: row;
+}
+
+.input-grouphas-validation {
+    width: 119px;
+    height: 30px;
+    background-color: #ffffff;
+    display: inline;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+
+.input-group-text {
+    width: 67px;
+    height: 30px;
+    color: #6f6e6e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+}
+
+.form-select-is-invalid {
+    width: 85px;
+    height: 30px;
+    color: #6f6e6e;
+    font-family: " Lato";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    border: none;
+
+}
+
+.conteiner-goods {
+    margin-left: 522px;
+    margin-top: 48px;
+    max-width: 846px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.goods-product {
+    display: flex;
+    flex-direction: column;
+    width: 263px;
+    height: 364px;
+    background-color: #ffffff;
+}
+
+.goods-product:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    filter: brightness(50%);
+}
+
+.conteiner-nav {
+    margin: 0 auto;
+    margin-left: 522px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagination {
+    display: flex;
+    width: 261px;
+    height: 44px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+}
+
+.page-item {
+    color: #c4c4c4;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.page-link {
+    color: #c4c4c4;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+.view-all {
+    width: 150px;
+    height: 44px;
+    border-radius: 3px;
+    border: 1px solid #ef5b70;
+    background-color: #ffffff;
+    color: #ef5b70;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+.view-all:hover {
+    border: 1px solid transparent;
+    background-color: #ef5b70;
+    color: #ffffff;
+}
+
+.baner-black {
+    max-width: 1600px;
+    height: 341px;
+    background-color: #222224;
+    display: flex;
+
+    margin-top: 110px;
+    margin-bottom: 0;
+}
+
+.conteiner-baner-black {
+    width: 1088px;
+    display: flex;
+    justify-content: space-between;
+    ;
+}
+
+.blok-info {
+    display: flex;
+    flex-direction: column;
+    width: 309px;
+    margin-top: 89px;
+}
+
+.img-baner-black {
+    width: 45px;
+    height: 32px;
+    margin-left: 130px;
+}
+
+.blok-info h1 {
+    color: #fbfbfb;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.blok-info p {
+    color: #fbfbfb;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: 23.95px;
+    text-align: center;
+}
+
+.form-check-chekout {
+    display: flex;
+}
+
+.forms-check-input {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #555555;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form-check-label {
+    color: #222222;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: right;
+    text-transform: uppercase;
+
 }
