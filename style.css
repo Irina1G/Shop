@@ -1183,7 +1183,7 @@ a {
 }
 
 .new_arrivals {
-    width: 100%;
+    width: 1610px;
     height: 148px;
     background-color: #f8f3f4;
     display: flex;
@@ -1246,6 +1246,11 @@ a {
     color: #636363;
 }
 
+.container-main_img {
+    width: 1607px;
+    margin: 0 auto;
+}
+
 .main_img {
     height: 777px;
     border: 1px solid #eaeaea;
@@ -1253,9 +1258,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-
-
-
+    width: 1607px;
 }
 
 .girl {
@@ -1292,9 +1295,7 @@ a {
 
 .info-conteiner {
     margin: 0 auto;
-
-
-
+    width: 1140px;
 }
 
 .info {
@@ -1303,9 +1304,6 @@ a {
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     margin-top: -60px;
-    margin-left: 229px;
-
-
 }
 
 .collection {
@@ -1580,7 +1578,12 @@ a {
     text-transform: uppercase;
     margin-left: 230px;
     margin-top: 89px;
+    border: none;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
 }
+
 
 .left-form {
     width: 246px;
@@ -1964,7 +1967,7 @@ a {
     border: 1px solid transparent;
 }
 
-.conteiner-form {
+.container-form {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -2185,68 +2188,7 @@ a {
 }
 
 
-/* скрываем чекбоксы и блоки с содержанием */
-.hide,
-.hide+label~div {
-    display: none;
 
-
-}
-
-/* вид текста label */
-.hide+label,
-.hide:checked+label {
-    color: #6f6e6e;
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    border-bottom: 1px solid #ebebeb;
-    border-left: 4px solid #ef5b70;
-    height: 37px;
-    padding-left: 11px;
-    padding-top: 12px;
-}
-
-/* вид текста label при активном переключателе */
-.hide:checked+label {
-    color: #ef5b70;
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-
-
-}
-
-/* когда чекбокс активен показываем блоки с содержанием  */
-.hide:checked+label+div {
-    display: block;
-    background: #ffffff;
-    width: 243px;
-    color: #6f6e6e;
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 33px;
-    text-align: left;
-    position: absolute;
-    margin-top: 37px;
-    border-bottom: 1px solid transparent;
-    z-index: 10000;
-    padding-left: 17px;
-}
 
 .menu-list-product:hover {
     color: #ef5b70
@@ -2380,8 +2322,9 @@ input[type='range']::-webkit-slider-thumb {
     margin-top: 10px;
 }
 
-.view-conteiner {
+.view-container {
     margin: 0 auto;
+    width: 1140px;
 }
 
 .filter {
@@ -2438,6 +2381,7 @@ input[type='range']::-webkit-slider-thumb {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 1140px;
 }
 
 .goods-product {
@@ -2456,9 +2400,9 @@ input[type='range']::-webkit-slider-thumb {
 
 .conteiner-nav {
     margin: 0 auto;
-    margin-left: 522px;
     display: flex;
     justify-content: space-around;
+    width: 1140px;
 }
 
 .pagination {
@@ -2516,20 +2460,18 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .baner-black {
-    max-width: 1600px;
     height: 341px;
     background-color: #222224;
     display: flex;
-
     margin-top: 110px;
     margin-bottom: 0;
 }
 
 .conteiner-baner-black {
-    width: 1088px;
+    width: 1140;
     display: flex;
     justify-content: space-between;
-    ;
+    margin: 0 auto;
 }
 
 .blok-info {
@@ -2590,5 +2532,9 @@ input[type='range']::-webkit-slider-thumb {
     line-height: normal;
     text-align: right;
     text-transform: uppercase;
+}
 
+.container-arravals {
+    margin: 0 auto;
+    max-width: 1610px;
 }
